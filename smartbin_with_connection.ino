@@ -113,12 +113,12 @@ float readDistanceCm() {
 
 /* ===================== LED CONTROL ===================== */
 void setTrashLEDs(int percent) {
-  if (percent <= 33) {
+  if (percent <= 60) {
     digitalWrite(GREEN_LED, HIGH);
     digitalWrite(YELLOW_LED, LOW);
     digitalWrite(RED_LED, LOW);
   } 
-  else if (percent <= 66) {
+  else if (percent <= 80) {
     digitalWrite(GREEN_LED, LOW);
     digitalWrite(YELLOW_LED, HIGH);
     digitalWrite(RED_LED, LOW);
